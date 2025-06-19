@@ -184,13 +184,14 @@
 
         <h3>Device Information</h3>
         <ul>
-            <li><strong>Local Storage:</strong> App preferences and theme settings stored in device UserDefaults</li>
+            <li><strong>Local Storage:</strong> App preferences and settings stored in device UserDefaults</li>
+            <li><strong>Theme Preferences:</strong> Color scheme and personalization settings (Pro version only)</li>
             <li><strong>Notification Access:</strong> Permission to send local notifications for appointment reminders</li>
         </ul>
 
         <h2>How We Use Your Information</h2>
         
-        <h3>Core Functionality</h3>
+        <h3>Core Functionality (All Versions)</h3>
         <ul>
             <li>Display and manage your medical appointments</li>
             <li>Send local notifications for appointment reminders</li>
@@ -199,12 +200,45 @@
             <li>Provide timeline and calendar views of your appointments</li>
         </ul>
 
-        <h3><span class="pro-feature">Pro Version Features</span></h3>
+        <h3><span class="pro-feature">Pro Version Exclusive Features</span></h3>
         <ul>
-            <li>Enhanced customization options</li>
-            <li>Advanced reporting and analytics</li>
-            <li>Extended appointment history</li>
-            <li>Additional notification customization</li>
+            <li><strong>Export appointments</strong> to .mediplanner files for backup or sharing</li>
+            <li><strong>Import appointments</strong> from .mediplanner files shared by other users</li>
+            <li><strong>Custom theme colors</strong> and advanced personalization options</li>
+        </ul>
+
+        <h2>Import and Export Functionality (Pro Version Only)</h2>
+        
+        <div class="highlight-box">
+            <h3>Pro Version Exclusive Feature</h3>
+            <p><strong>Data Sharing Through Files:</strong> Only the Pro version of MediPlanner includes import and export functionality. This allows Pro users to export their appointments to a .mediplanner file and import appointments from files shared by other Pro users. This functionality is entirely user-controlled and optional.</p>
+        </div>
+
+        <h3>Export Features</h3>
+        <ul>
+            <li><strong>Local File Creation:</strong> Export creates .mediplanner files stored in your device's temporary directory</li>
+            <li><strong>JSON Format:</strong> Files contain appointment data in structured JSON format with metadata</li>
+            <li><strong>Sharing Control:</strong> You choose how and with whom to share exported files</li>
+            <li><strong>File Contents:</strong> Exported files include appointment details, recurring schedules, and metadata (export date, app version)</li>
+            <li><strong>No Automatic Upload:</strong> Files are not automatically transmitted anywhere</li>
+        </ul>
+
+        <h3>Import Features</h3>
+        <ul>
+            <li><strong>File Validation:</strong> App validates .mediplanner file format and version compatibility</li>
+            <li><strong>Duplicate Detection:</strong> Identifies potential duplicate appointments before import</li>
+            <li><strong>User Control:</strong> You decide which appointments to import and how to handle duplicates</li>
+            <li><strong>Notification Options:</strong> Choose whether to import original notification settings or apply new defaults</li>
+            <li><strong>Import Preview:</strong> Review all appointments before confirming import</li>
+            <li><strong>Undo Capability:</strong> Can undo recent imports to remove imported data</li>
+        </ul>
+
+        <h3>File Security and Privacy</h3>
+        <ul>
+            <li><strong>Temporary Storage:</strong> Import files are temporarily stored and cleaned up after processing</li>
+            <li><strong>Local Processing:</strong> All import/export operations happen locally on your device</li>
+            <li><strong>User Responsibility:</strong> You control who has access to exported files and their contents</li>
+            <li><strong>No Cloud Integration:</strong> No automatic syncing or cloud storage of exported files</li>
         </ul>
 
         <h2>Data Storage and Security</h2>
@@ -236,8 +270,17 @@
         <h2>Data Sharing</h2>
         
         <div class="highlight-box">
-            <p><strong>We do not share your data.</strong> Since all information is stored locally on your device, there is no data sharing with third parties, advertising networks, or analytics services.</p>
+            <p><strong>No Automatic Data Sharing:</strong> MediPlanner does not automatically share your data with third parties, advertising networks, or analytics services. All data sharing is explicitly controlled by you through the import/export features.</p>
         </div>
+
+        <h3>User-Controlled Sharing (Pro Version Only)</h3>
+        <ul>
+            <li><strong>Export Files:</strong> Pro users can voluntarily export and share .mediplanner files containing their appointment data</li>
+            <li><strong>Sharing Responsibility:</strong> When Pro users share exported files, they are responsible for ensuring recipient trustworthiness</li>
+            <li><strong>File Contents Warning:</strong> Exported files contain all appointment details including sensitive health information</li>
+            <li><strong>No Tracking:</strong> We do not track or monitor file sharing activities</li>
+            <li><strong>Free Version:</strong> The free version does not include any data sharing capabilities</li>
+        </ul>
 
         <h2>Data Retention and Deletion</h2>
         
@@ -246,6 +289,8 @@
             <li><strong>Full Control:</strong> You have complete control over your data</li>
             <li><strong>Individual Deletion:</strong> Delete specific appointments or recurring series</li>
             <li><strong>Complete Removal:</strong> Use the "Clear All Data" feature in settings to remove all information</li>
+            <li><strong>Import Management (Pro Only):</strong> Undo recent imports to remove imported appointments</li>
+            <li><strong>File Cleanup (Pro Only):</strong> Temporary import files are automatically cleaned up after processing</li>
             <li><strong>App Deletion:</strong> Uninstalling the app removes all stored data from your device</li>
         </ul>
 
@@ -255,17 +300,20 @@
         <ul>
             <li>Core appointment management features</li>
             <li>Basic notification system</li>
-            <li>Standard theme options</li>
-            <li>Same privacy protections as Pro version</li>
+            <li>Default theme only</li>
+            <li>Local data storage only</li>
+            <li><strong>No import/export capabilities</strong></li>
+            <li>No data sharing functionality</li>
         </ul>
 
         <h3>Pro Version</h3>
         <ul>
             <li>All Free version features</li>
-            <li>Advanced customization options</li>
-            <li>Enhanced reporting capabilities</li>
-            <li>Additional security features</li>
-            <li>Same local-only data storage policy</li>
+            <li><strong>Import/Export functionality</strong> - Create and share .mediplanner files</li>
+            <li><strong>Custom theme colors</strong> - Personalize app appearance with multiple color schemes</li>
+            <li>File-based data sharing capabilities</li>
+            <li>Same local-only data storage policy as Free version</li>
+            <li>Additional privacy controls for import/export operations</li>
         </ul>
 
         <h2>Children's Privacy</h2>
@@ -278,7 +326,8 @@
         <div class="contact-info">
             <p><strong>Questions or Concerns?</strong></p>
             <p>If you have any questions about this Privacy Policy or MediPlanner's privacy practices, please contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:privacy@mediplanner.com">tha_ultima@mediplanner.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:privacy@mediplanner.com">privacy@mediplanner.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Hybridia/MediPlanner">https://github.com/Hybridia/MediPlanner</a></p>
         </div>
 
         <h2>Your Rights</h2>
@@ -287,12 +336,14 @@
             <li><strong>Access:</strong> View all your stored appointments and settings within the app</li>
             <li><strong>Modification:</strong> Edit or update any information at any time</li>
             <li><strong>Deletion:</strong> Remove individual items or all data through app settings</li>
-            <li><strong>Portability:</strong> Export functionality may be available in future updates</li>
+            <li><strong>Export (Pro Only):</strong> Create backup files of your appointment data</li>
+            <li><strong>Import Control (Pro Only):</strong> Choose which appointments to import from shared files</li>
+            <li><strong>Sharing Control (Pro Only):</strong> Decide when and with whom to share your exported data</li>
         </ul>
 
         <div class="date-updated">
             <p><strong>Last Updated:</strong> January 2025</p>
-            <p>Version 1.0 - Updated for Free and Pro versions</p>
+            <p>Version 2.0 - Updated for Free and Pro versions</p>
         </div>
     </div>
 </body>
